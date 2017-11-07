@@ -1,4 +1,7 @@
-﻿angular.module('LogisticModule')
+﻿//
+// Google maps directive for autocomplete controls with selection geographic places
+//
+angular.module('LogisticModule')
     .directive('googleplace', function () {
         return {
             require: 'ngModel',
@@ -10,10 +13,9 @@
                 scope.gPlace = new google.maps.places.Autocomplete(element[0], options);
 
                 google.maps.event.addListener(scope.gPlace, 'place_changed', function () {
-                    debugger;
-                    //let place = scope.gPlace.getPlace();
-                    //let lat = place.geometry.location.lat();
-                    //let lng = place.geometry.location.lng();
+                    let place = scope.gPlace.getPlace();
+                    let lat = place.geometry.location.lat();
+                    let lng = place.geometry.location.lng();
                     scope.$apply(function () {
                         model.$setViewValue(element.val());
                     });

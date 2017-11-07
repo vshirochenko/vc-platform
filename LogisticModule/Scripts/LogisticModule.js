@@ -17,7 +17,7 @@ angular.module(moduleTemplateName, [])
                         var newBlade = {
                             id: 'blade1',
                             controller: 'LogisticModule.blade1Controller',
-                            template: 'Modules/$(LogisticModule)/Scripts/blades/helloWorld_blade1.tpl.html',
+                            template: 'Modules/$(LogisticModule)/Scripts/blades/logisticModule_blade1.tpl.html',
                             isClosingDisabled: true
                         };
                         bladeNavigationService.showBlade(newBlade);

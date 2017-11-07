@@ -110,16 +110,19 @@
   <ItemGroup>
     <Content Include="module.manifest" />
     <Content Include="Content\css\LogisticModule.css" />
-    <Content Include="Scripts\blades\helloWorld_blade1.js" />
-    <Content Include="Scripts\blades\helloWorld_blade1.tpl.html" />
+    <Content Include="Scripts\blades\logisticModule_blade1.js" />
+    <Content Include="Scripts\blades\logisticModule_blade1.tpl.html" />
     <Content Include="Scripts\LogisticModule.js" />
-    <Content Include="Scripts\resources\googleplace.js" />
+    <Content Include="Scripts\directives\Googleplace.js" />
     <Content Include="Scripts\resources\LogisticModuleApi.js" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controllers\Api\LogisticModuleController.cs" />
     <Compile Include="Module.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Scripts\services\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
