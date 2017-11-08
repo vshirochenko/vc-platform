@@ -1,13 +1,22 @@
 ﻿<div class="blade-content">
     <div class="blade-inner">
         <div class="inner-block">
-            <div class="sub-t">{{blade.data}}</div>
-            <div>Google Places Autocomplite</div>
-            <div>Selected: {{chosenPlace}}</div>
             <div class="form-group">
+                <div>Select location from:</div>
                 <div class="form-input">
-                    <input class="form-control" ng-model="chosenPlace" googleplace/>
+                    <input class="form-control" ng-model="chosenFrom" googleplace/>
                 </div>
+            </div>
+            <div class="form-group">
+                <div>Select location to:</div>
+                <div class="form-input">
+                    <input class="form-control" ng-model="chosenTo" googleplace />
+                </div>
+            </div>
+            <div>
+                <button class="btn __other" ng-click="blade.openNewBladeTest()">
+                    Open new blade (test!)
+                </button>
             </div>
         </div>
     </div>
