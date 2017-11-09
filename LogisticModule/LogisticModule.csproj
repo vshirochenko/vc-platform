@@ -110,20 +110,22 @@
   <ItemGroup>
     <Content Include="module.manifest" />
     <Content Include="Content\css\LogisticModule.css" />
-    <Content Include="Scripts\blades\logisticModule_blade1.js" />
-    <Content Include="Scripts\blades\logisticModule_blade1.tpl.html" />
+    <Content Include="Scripts\blades\googleMaps_blade.js" />
+    <Content Include="Scripts\blades\googleMaps_blade.tpl.html" />
+    <Content Include="Scripts\blades\mainWorkspace_blade.js" />
+    <Content Include="Scripts\blades\mainWorkspace_blade.tpl.html" />
+    <Content Include="Scripts\Constants.js" />
     <Content Include="Scripts\LogisticModule.js" />
     <Content Include="Scripts\directives\Googleplace.js" />
     <Content Include="Scripts\resources\LogisticModuleApi.js" />
+    <Content Include="Scripts\services\googleMapsService.js" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controllers\Api\LogisticModuleController.cs" />
     <Compile Include="Module.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Scripts\services\" />
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

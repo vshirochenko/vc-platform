@@ -15,9 +15,9 @@ angular.module(moduleTemplateName, [])
                 controller: [
                     '$scope', 'platformWebApp.bladeNavigationService', function ($scope, bladeNavigationService) {
                         var newBlade = {
-                            id: 'blade1',
-                            controller: 'LogisticModule.blade1Controller',
-                            template: 'Modules/$(LogisticModule)/Scripts/blades/logisticModule_blade1.tpl.html',
+                            id: 'mainWorkspaceBlade',
+                            controller: 'LogisticModule.mainWorkspaceController',
+                            template: 'Modules/$(LogisticModule)/Scripts/blades/mainWorkspace_blade.tpl.html',
                             isClosingDisabled: true
                         };
                         bladeNavigationService.showBlade(newBlade);
